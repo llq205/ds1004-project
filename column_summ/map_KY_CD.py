@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 """
     
-    map_park_name.py
-    new york park names
+    map_KY_CD.py
+    offense key codes
     """
 import sys
 from csv import reader
