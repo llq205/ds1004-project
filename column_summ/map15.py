@@ -12,6 +12,7 @@ type = 'float'
 label = None
 descr = 'Adress Number'
 lines = csv.reader(sys.stdin)
+next(lines, None)
 
 for entry in lines:
     key = entry[0]

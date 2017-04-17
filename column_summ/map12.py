@@ -12,6 +12,7 @@ type = 'string'
 label = None
 descr = 'Crime Character'
 lines = csv.reader(sys.stdin)
+next(lines, None)
 
 for entry in lines:
     key = entry[0]

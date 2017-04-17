@@ -12,6 +12,7 @@ type = 'string'
 label = None
 descr = 'Borough'
 lines = csv.reader(sys.stdin)
+next(lines, None)
 
 for entry in lines:
     key = entry[0]
