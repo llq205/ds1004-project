@@ -1,3 +1,17 @@
 1.Plot compliant count by time (year, month, day).
 
 2.Correlation
+a) Police Precinct Area vs Police Precinct Total Crimes Count
+Do smaller precincts have fewer crime reported than bigger precincts?
+Due to relatively not enough policemen in that area
+
+b)Percipitation vs Crimes Count
+Do people tend to commit crimes in a sunny day or a rainy day?
+
+c)Feburary have fewer days, so fewer crimes?
+Or Average by days, days in Feburary do happen fewer crimes
+
+d)Population in NYC grows every year, yet crimes tend to decrease.
+Why is that?
+More policemen hired by police stations?
+
