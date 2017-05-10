@@ -20,13 +20,13 @@ __________________________________________________________________________
 For Part I, we wrote a mapper and reducer for each column of NYPD_Complaint_Data_Historic.csv to examine  data type, null values and invalid values for each column. 
 You could find the mapper and reducer codes in column_summ folder. To submit a hadoop job on NYU Dumbo, please run as following:
 
-hjs -numReduceTasks 1 -file /home/<your-net-id> -mapper <your-net-id>/map<column-index>.py -reducer <your-net-id>/reduce<column-index>.py -input /user/<your-csv-input> -output /user/<your-net-id>/result<column-index>.out
+hjs -numReduceTasks 1 -file /home/\<your-net-id\> -mapper <your-net-id>/map\<column-index\>.py -reducer \<your-net-id\>/reduce\<column-index\>.py -input /user/\<your-csv-input\> -output /user/\<your-net-id\>/result\<column-index\>.out
 
-hjs -numReduceTasks 1 -file /home/<your-net-id> -mapper <your-net-id>/map<column-name>.py -reducer <your-net-id>/reduce_by_key.py -input /user/<your-csv-input> -output /user/<your-net-id>/result<column-name>.out
+hjs -numReduceTasks 1 -file /home/<your-net-id> -mapper \<your-net-id\>/map\<column-name\>.py -reducer \<your-net-id\>/reduce_by_key.py -input /user/\<your-csv-input\> -output /user/\<your-net-id\>/result\<column-name\>.out
 
 For Part II, we used PySpark to join tables and making queries on NYU Dumbo. 
 To submit PySpark job, please run as following:
 
-spark-submit <0>.py <csv1>.csv <csv2>.csv <output>.out  
+spark-submit \<spark\>.py \<csv1\>.csv \<csv2\>.csv \<output\>.out  
 
 For plotting in our project, please refer to jupyter notebooks in code_for_plots folder. And the plots are saved in image_new folder.  
