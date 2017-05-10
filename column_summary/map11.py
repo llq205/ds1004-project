@@ -10,12 +10,13 @@ key = ''
 picked_column = None
 type = 'string'
 label = None
-descr = 'Borough'
+descr = 'Progess'
 lines = csv.reader(sys.stdin)
+next(lines, None)
 
 for entry in lines:
     key = entry[0]
-    picked_column = entry[13]
+    picked_column = entry[10]
     if picked_column == None or picked_column == 'N/A' or picked_column == '':
         label = 'NULL'
         type = 'NULL'

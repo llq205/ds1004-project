@@ -8,21 +8,21 @@ import csv
 
 key = ''
 picked_column = None
-type = 'string'
+type = 'float'
 label = None
-descr = 'PD_Description'
+descr = 'PD_CD'
 lines = csv.reader(sys.stdin)
+next(lines, None)
 
 for entry in lines:
     key = entry[0]
-    picked_column = entry[12]
-    if picked_column == None or picked_column == 'N/A' or picked_column == '':
+    picked_column = entry[8]
+    if picked_column is None or picked_column == 'NaN' or picked_column == '':
         label = 'NULL'
         type = 'NULL'
-       # print picked_column
     else:
         try:
-            picked_column = str(picked_column)
+            picked_column = float(picked_column)
             label = 'VALID'
         except ValueError:
             label = 'INVALID'
