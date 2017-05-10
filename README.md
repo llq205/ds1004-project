@@ -15,8 +15,4 @@ The dataset we will be using is NYPD Complaint Historical Data, which includes a
 
 All components of our project are reproducible.
 
-## Deliverable 1
- Our deliverable is available on our GoogleDoc link:
- https://docs.google.com/a/nyu.edu/document/d/1vTjA-pKgZsvlb5QIo-u2lxI6H0FwL__P_BueO7GGDMY/edit?usp=sharing
- 
  
