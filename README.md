@@ -20,7 +20,7 @@ __________________________________________________________________________
 For Part I, we wrote a mapper and reducer for each column of NYPD_Complaint_Data_Historic.csv to examine  data type, null values and invalid values for each column. 
 You could find the mapper and reducer codes in column_summ folder. To submit a hadoop job on NYU Dumbo, please run as following:
 
-hjs -numReduceTasks 1 -file /home/<your-net-id> -mapper <your-net-id>/map<column-index>.py -reducer <your-net-id>/reduce<column-index>.py -input /user/<your-csv-input> -output /user/<your-net-id>/result<column-index>.out
+hjs -numReduceTasks 1 -file /home/\<your-net-id\> -mapper <your-net-id>/map<column-index>.py -reducer <your-net-id>/reduce<column-index>.py -input /user/<your-csv-input> -output /user/<your-net-id>/result<column-index>.out
 
 hjs -numReduceTasks 1 -file /home/<your-net-id> -mapper <your-net-id>/map<column-name>.py -reducer <your-net-id>/reduce_by_key.py -input /user/<your-csv-input> -output /user/<your-net-id>/result<column-name>.out
 
